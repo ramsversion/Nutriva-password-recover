@@ -8,7 +8,7 @@ const requestPassword = async (email: any) => {
 
 
 const updatedPassword = async (password: any, password_confirm: any, token: any) => {
-    const res = await axios.post(process.env.REACT_APP_THEME_API_URL + 'auth/reset-password', { params: { password: password, password_confirm: password_confirm, token: token } });
+    const res = await axios.post(process.env.REACT_APP_THEME_API_URL + 'auth/reset-password', { password: password, password_confirm: password_confirm, token: token });
     return res;
 }
 
